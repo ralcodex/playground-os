@@ -1,1 +1,1 @@
--- loads in and runs apps from the apps folder
+-- will load in apps from the apps folder when prompted to from the terminal

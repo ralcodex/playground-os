@@ -1,0 +1,2 @@
+-- blank for now, will be the core of the system, it'll be the main way to interact with the system
+-- will be hard to implementbut it's important to add it as one of the first features, since it's the core of the system
