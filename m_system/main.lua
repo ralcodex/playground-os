@@ -7,11 +7,10 @@ function love.load()
     
     -- set up the window
     love.window.setMode(800, 600, {resizable=true})
-    love.window.setFullscreen(true)
+    love.window.setFullscreen(false)
     love.window.setIcon(love.image.newImageData("m_assets/playIcon.png"))
     love.window.setTitle("playgroundtest")
     
-    love.graphics.newImage("m_assets/hand.png")
     local cr_data = love.image.newImageData("m_assets/hand.png")
     cursor = love.mouse.newCursor(cr_data, 4, 1)
     love.mouse.setCursor(cursor)
