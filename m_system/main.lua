@@ -9,7 +9,7 @@ function love.load()
     canEsc = true
     
     -- set up the window
-    love.window.setMode(800, 600)
+    love.window.setMode(800, 600, {resizable=true})
     love.window.setFullscreen(false)
     love.window.setIcon(love.image.newImageData("m_assets/playIcon.png"))
     love.window.setTitle("playgroundtest")
