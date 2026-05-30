@@ -9,10 +9,9 @@ function love.load()
     canEsc = true
     
     -- set up the window
-    love.window.setMode(800, 600, {resizable=true})
-    love.window.setFullscreen(false)
-    love.window.setIcon(love.image.newImageData("m_assets/playIcon.png"))
-    love.window.setTitle("playgroundtest")
+    love.window.setFullscreen(true)
+    love.window.setIcon(love.image.newImageData("m_assets/guyicon.png"))
+    love.window.setTitle("playground-os pre-alpha")
     
     local cr_data = love.image.newImageData("m_assets/hand.png")
     cursor = love.mouse.newCursor(cr_data, 4, 1)
@@ -34,7 +33,7 @@ function love.update(dt)
 end
 
 function love.draw()
-    love.graphics.setBackgroundColor(1, 1, 1)
+    love.graphics.setBackgroundColor(0, 0.3, 0.5)
     love.graphics.setColor(0, 0, 0)
     love.graphics.print("playground-os test window", 0, 0)
     love.graphics.print("press ESC to end the program", 0, 25)
