@@ -37,8 +37,11 @@ local commands = {
     end
 }
 
+table.insert(terminal.history, "terminal test")
+
 function love.draw()
     love.graphics.setBackgroundColor(0, 0.3, 0.5)
     love.graphics.setColor(1, 1, 1)
     love.graphics.print("press 'ESC' to end the program", 0, 0)
+    love.graphics.print(terminal.history)
 end
