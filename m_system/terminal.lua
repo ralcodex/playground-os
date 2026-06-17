@@ -2,16 +2,29 @@
 -- I DONT KNOW WHAT IM DOING SO THIS MAY BE VERY BROKEN/BUGGY
 
 require("apploader")
-cantype = false
+cantype = true
+testvar = ""
 
 local terminal = {
     history = {},
     input = "",
 }
 
-function love.textinput(t)
+-- i'm assuming this is how text input works in love2d...
+-- i dont really know, the auto-completer wrote this function and it works, soooo...
+function love.textinput(t) 
     if cantype then
         terminal.input = terminal.input .. t
+    end
+end
+
+function love.keypressed(key) -- clear input after pressing enter
+    if key == "enter" then
+        testvar = terminal.input
+        terminal.input = "" 
+        if testvar == "getversion" then 
+            table.insert(terminal.history, "playground-os pre alpha v2.1")
+        end
     end
 end
 
@@ -26,7 +39,7 @@ local commands = {
     end,
 
     getversion = function()
-        table.insert(terminal.history, "playground-os pre alpha v2")
+        table.insert(terminal.history, "playground-os pre alpha v2.1")
     end,
 
     list = function()
@@ -40,8 +53,7 @@ local commands = {
 table.insert(terminal.history, "terminal test")
 
 function love.draw()
-    love.graphics.setBackgroundColor(0, 0.3, 0.5)
+    love.graphics.setBackgroundColor(0, 0, 0)
     love.graphics.setColor(1, 1, 1)
-    love.graphics.print("press 'ESC' to end the program", 0, 0)
-    love.graphics.print(terminal.history)
+    love.graphics.print("> " .. terminal.input, 10, love.graphics.getHeight() - 30) -- input line
 end
