@@ -1,5 +1,5 @@
-# What is playground-os?
-playground-os is planned to be a terminal-focused fake OS that lets you make your own apps, games, whatever you can think of, and run them inside the program!
+# What is Playground?
+Playground is planned to be a terminal-focused fake OS that lets you make your own apps, games, whatever you can think of, and run them inside the program!
 apps are self-contained in their own folders with their own files and assets!
 
 # Terminal command guide (terminal is still being developed, so this is a work-in-progress)
@@ -10,7 +10,7 @@ clear the terminal history
 print text into the terminal
 
 ### getversion
-check the current version of playground-os you're running
+check the current version of Playground you're running
 
 ### list
 list all availible commands
