@@ -2,7 +2,7 @@
 playground-os is planned to be a terminal-focused fake OS that lets you make your own apps, games, whatever you can think of, and run them inside the program!
 apps are self-contained in their own folders with their own files and assets!
 
-# Terminal command guide 💻>_
+# Terminal command guide (terminal is still being developed, so this is a work-in-progress)
 ### clear
 clear the terminal history
 
@@ -17,7 +17,7 @@ list all availible commands
 
 that's all of them for now, more will be added later
 
-# How do you make my own apps? 🎨📓
+# How do you make my own apps? 
 before you start making your own creations, you'll need to install LÖVE (availible at love2d.org), the Lua framework this project is built on. 
 You'll need it to run the project and test your apps inside. (availible at love2d.org)
 
