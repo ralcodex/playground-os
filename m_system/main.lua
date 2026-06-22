@@ -16,11 +16,11 @@ function love.load()
 
     -- set up sfx
     sounds = {
-        startup = love.audio.newSource("m_sound/m_sfx/startup.mp3", "static")
-        openApp = love.audio.newSource("m_sound/m_sfx/openapp.mp3", "static")
-        closeApp = love.audio.newSource("m_sound/m_sfx/closeapp.mp3", "static")
-        notif = love.audio.newSource("m_sound/m_sfx/notif.mp3", "static")
-        crash = love.audio.newSource("m_sound/m_sfx/crashsound.mp3", "static")
+        startup = love.audio.newSource("m_sound/m_sfx/startup.mp3", "static"),
+        openApp = love.audio.newSource("m_sound/m_sfx/openapp.mp3", "static"),
+        closeApp = love.audio.newSource("m_sound/m_sfx/closeapp.mp3", "static"),
+        notif = love.audio.newSource("m_sound/m_sfx/notif.mp3", "static"),
+        crash = love.audio.newSource("m_sound/m_sfx/crashsound.mp3", "static"),
     }
 end
 
