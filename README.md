@@ -1,5 +1,5 @@
 # What is Playground?
-Playground is planned to be a terminal-focused fake OS that lets you make your own apps, games, whatever you can think of, and run them inside the program!
+Playground is planned to be a terminal-focused fake OS (kinda similar to Picotron...kinda) that lets you make your own apps, games, whatever you can think of, and run them inside the program!
 apps are self-contained in their own folders with their own files and assets!
 
 # Terminal command guide (terminal is still being developed, so this is a work-in-progress)
