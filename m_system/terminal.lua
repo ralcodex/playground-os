@@ -11,7 +11,7 @@ local terminal = {
 }
 
 -- i'm assuming this is how text input works in love2d...
--- i dont really know, the auto-completer wrote this function and it works, soooo...
+-- i dont really know, the auto-complete wrote this function and it works, soooo...
 function love.textinput(t) 
     if cantype then
         terminal.input = terminal.input .. t
@@ -23,7 +23,7 @@ function love.keypressed(key) -- clear input after pressing enter
         testvar = terminal.input
         terminal.input = "" 
         if testvar == "getversion" then 
-            table.insert(terminal.history, "playground-os pre alpha v2.1")
+            table.insert(terminal.history, "playground pre-alpha v2.1")
         end
     end
 end
@@ -39,7 +39,7 @@ local commands = {
     end,
 
     getversion = function()
-        table.insert(terminal.history, "playground-os pre alpha v2.1")
+        table.insert(terminal.history, "playground pre-alpha v2.1")
     end,
 
     list = function()
@@ -55,5 +55,7 @@ table.insert(terminal.history, "terminal test")
 function love.draw()
     love.graphics.setBackgroundColor(0, 0, 0)
     love.graphics.setColor(1, 1, 1)
+    love.graphics.print("Terminal", 0, 0)
+    love.graphics.print(table.concat(terminal.history{}, "\n"), 0, 20)
     love.graphics.print("> " .. terminal.input, 10, love.graphics.getHeight() - 30) -- input line
 end

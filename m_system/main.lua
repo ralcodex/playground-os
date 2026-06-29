@@ -4,8 +4,11 @@ function love.load()
     require("apploader")
     
     -- state variables
-    state = "startup"
-    canEsc = true
+    state = {
+        current = "startup"
+        canEsc = true
+    }
+    
     
     local cr_data = love.image.newImageData("m_assets/cursors/hand.png")
     cursor = love.mouse.newCursor(cr_data, 4, 1)
@@ -30,7 +33,7 @@ end
 
 function love.keypressed(key)
     if key == "escape" then
-        if canEsc == true then
+        if state.canEsc == true then
             love.event.quit()
         end
     end
